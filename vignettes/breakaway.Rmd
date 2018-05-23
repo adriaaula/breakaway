@@ -56,7 +56,7 @@ frequencytablelist <- build_frequency_count_tables(otu_data)
 head(frequencytablelist[[63]])
 ```
 
-Interpretation: In this sample, there were 57 different species observed only once (singletons), 25 different species observed only twice, ..., 1 species observed 171 times.
+Interpretation: In this sample, there were `frequencytablelist[[63]][1,"Frequency"]` different species observed only once (singletons), `frequencytablelist[[63]][2,"Frequency"]` different species observed only twice, ..., 1 species observed `frequencytablelist[[63]][,"Index"] %>% tail(n = 1)` times.
 
 
 ## Estimating species richness
